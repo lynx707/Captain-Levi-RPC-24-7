@@ -26,25 +26,25 @@ client.on('ready', async () => {
     .setApplicationId('1079010612769722508')
     .setType('WATCHING')
     .setURL('https://www.youtube.com/patkhet') //Must be a youtube video link 
-    .setState('Discord Community')
-    .setName('Patkhet')
+    .setState('🇱‌🇪‌🇻‌🇮‌ 🇸‌🇶‌🇺‌🇦‌🇩')
+    .setName('AOT')
     .setDetails(`THE NAME IT SHOWS YOUR STREAMING [${formatTime()}]`)
     .setStartTimestamp(Date.now())
- .setAssetsLargeImage('https://cdn.discordapp.com/attachments/964235721630154812/1135218808072704101/20230610_182959.gif') //You can put links in tenor or discord and etc.
-    .setAssetsLargeText('Patkhet') //Text when you hover the Large image
+ .setAssetsLargeImage('https://cdn.discordapp.com/attachments/869609600842858526/1201224702576824451/20240128_235405.gif') //You can put links in tenor or discord and etc.
+    .setAssetsLargeText('𝕷𝖊𝖛𝖎 𝕬𝖈𝖐𝖊𝖗𝖒𝖆𝖓') //Text when you hover the Large image
     .setAssetsSmallImage('https://cdn.discordapp.com/attachments/964235721630154812/1135216057339097159/verify.gif') //You can put links in tenor or discord and etc.
     .setAssetsSmallText('Verify') //Text when you hover the Small image
     .addButton('Discord Server', 'https://discord.gg/n87vNuk89g')
     .addButton('Facebook Page', 'https://facebook.com/patkhet.lol');
 
   client.user.setActivity(r);
-  client.user.setPresence({ status: "online" }); //dnd, online, idle, offline
+  client.user.setPresence({ status: "idle" }); //dnd, online, idle, offline
 
   let prevTime = null;
   setInterval(() => {
     const newTime = formatTime();
     if (newTime !== prevTime) {
-      const newDetails = `Patkhet Server [${newTime}]`;
+      const newDetails = `CAPTAIN OF THE SURVEY CORPS`;
       r.setDetails(newDetails);
       client.user.setActivity(r);
       prevTime = newTime;
